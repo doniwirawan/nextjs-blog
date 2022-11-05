@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     return (
         <div className={darkMode ? 'dark' : ''}>
             <div className="dark:bg-gray-900 dark:text-white w-auto min-h-screen p-0 -mt-4 py-5 px-5">
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-xl mt-4 fixed' />
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-xl mt-4 mr-4 fixed' />
                 {children}
             </div>
         </div>
