@@ -31,7 +31,7 @@ export default function Post({ postData }) {
                 <title>{postData.title}</title>
             </Head>
             <div className='max-w-xl mx-auto'>
-                <h1 className='text-3xl py-1 font-bold lg:text-center mt-4 md:pt-4'>{postData.title}</h1>
+                <h1 className='text-3xl py-1 font-bold lg:text-center mt-20'>{postData.title}</h1>
                 <p className='text-md py-1 leading-8 text-gray-800 dark:text-gray-500 lg:text-center'><Date dateString={postData.date} /></p>
 
 
