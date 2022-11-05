@@ -126,8 +126,8 @@ export default function Home({ allPostsData }) {
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             {allPostsData.map(({ id, date, title }) => (
-              <Link href={`posts/${id}`}>
-                <div key={id} className="basis-1/3 flex-1 shadow-lg p-5 rounded-xl">
+              <Link key={id} href={`posts/${id}`}>
+                <div className="basis-1/3 flex-1 shadow-lg p-5 rounded-xl">
                   <h4 className='text-lg font-medium '>{title}</h4>
                   <p className='text-gray-500'><Date dateString={date} /></p>
                 </div>
